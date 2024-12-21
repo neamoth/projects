@@ -17,7 +17,7 @@ This is a simple web application for searching weather details by city name. It 
 ![Before Search UI](./UI/BeforeSearch.PNG)
 
 ### After Search:
-![After Search UI](./UI/AfterSearch.PNG)
+![After Search UI](./UI/afterSearch.PNG)
 
 ---
 
