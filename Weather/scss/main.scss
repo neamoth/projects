@@ -4,3 +4,116 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    background-color: #333;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(165deg, #00feba, #5b5d8a);
+    color: #fff;
+    margin: 4em auto 0;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .search{
+        input{
+            width: 100%;
+            height: 45px;
+            background: linear-gradient(195deg, #1d9459, #134986);
+            color: #fff;
+            border-radius: 7px;
+            font-size: 20px;
+            margin-right: 10px;
+            padding: 20px;
+        }
+        span{
+            position: absolute;
+            pointer-events: none;
+            padding: 10px;
+            font-size: 1.3em; 
+            transition: 0.8s;  
+        }
+        input:valid ~ span,
+        input:focus ~ span
+        {
+            color: #000;
+            font-weight: 500;
+            transform: translateX(10px) translateY(-22px);
+            font-size: 1em;
+            padding: 0 10px;
+            background: linear-gradient(90deg, #00feba, #5b5d8a);
+            border-radius: 2px;
+            transition: 0.6s;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+    .error{
+        display: none;
+        margin-left: 30px;
+        text-align: left;
+        span{
+            color: aliceblue;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+    .weather{
+        margin-top: 20px;
+        display: none;
+        img{
+            width: 170px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .details{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            margin-top: 80px;
+            .col{
+                display: flex;
+                align-items: center;
+                text-align: left;
+                margin-bottom: 20px;
+                img{
+                    width: 50px;
+                    margin-right: 10px;
+                }
+                div{
+                    .wind{
+                        font-size: 28px;
+                    }
+                    .humidity{
+                        font-size: 28px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}

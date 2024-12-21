@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" class="cityInput" required>
+            <span>Enter City Name</span>
+            <button class="searchBtn"><img src="./img/search.png"></button>
+        </div>
+        <div class="error">
+            <span>Invalid city name, Please try again..!</span>
+        </div>
+        <div class="weather">
+            <img class="weatherIcon" src="./img/Clear.png">
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./img/humidity.png">
+                    <div>
+                        <p class="humidity">%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./img/wind.png" alt="">
+                    <div>
+                        <p class="wind">/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>  
+            </div>
+            <div class="details">
+                <div class="col">
+                    <img src="./img/feel.png">
+                    <div>
+                        <p class="feel"></p>
+                        <p>Feel Like</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./img/pressure.png" alt="">
+                    <div>
+                        <p class="pressure"></p>
+                        <p>Pressure</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
